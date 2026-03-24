@@ -6,10 +6,18 @@ class Program
     {
         Console.WriteLine("Hello World");
 
-        int a = 5;
-        int b = 3;
+        // Запит першого числа
+        Console.Write("Введіть перше число: ");
+        int a = int.Parse(Console.ReadLine());
+
+        // Запит другого числа
+        Console.Write("Введіть друге число: ");
+        int b = int.Parse(Console.ReadLine());
+
+        // Обчислення суми
         int sum = a + b;
 
-        Console.WriteLine("Sum = " + sum);
+        // Виведення результату
+        Console.WriteLine($"Результат: {a} + {b} = {sum}");
     }
 }
